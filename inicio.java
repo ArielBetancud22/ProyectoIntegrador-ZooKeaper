@@ -1,1 +1,3 @@
-escribo algo
+public static void name() {
+    
+}
