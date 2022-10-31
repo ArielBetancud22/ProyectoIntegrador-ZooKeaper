@@ -2,15 +2,39 @@ import java.util.Scanner;
 
 public class Zookeaper {
     public static void main(String[] args) {
-        Scanner sn = new Scanner(System.in);
+        menuingreso();
+    }
 
+    public static void menuingreso(){
+        Scanner sn = new Scanner(System.in);
+        String auxiliar;
+        String contraseña;
+        int intentoContraseña;
+        System.out.println("-----------Inicio-------------");
+		System.out.println("Bienvenido al Zoo");
+		System.out.println("");
+		System.out.println("----------Cuenta--------------");
+        do{
+            System.out.println("Ingrese la contraseña para el personal");
+            auxiliar= sn.nextLine();
+            contraseña="contraseña";
+        }while(!contraseña.equals(auxiliar));
+        System.out.println("ADMINISTRACION");
+
+        // do{
+        //     if(contraseña.equals(auxiliar)){
+        //         System.out.println("");
+        //     }
+        // }
+
+    
         boolean salir = false;
         int opcion;
-
+    
         try{
-
-
-            
+    
+    
+    
             while (!salir) {
                 System.out.println("BIENVENIDO AL MENU DE INICIO");
                 System.out.println("1-");
@@ -48,5 +72,6 @@ public class Zookeaper {
             System.out.println(e.getMessage());
             sn.next();
         }
+
     }
 }
