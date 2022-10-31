@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Zookeaper {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
 
