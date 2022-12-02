@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff98f316e96, pid=8240, tid=5896
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.4.1+1 (17.0.4.1+1) (build 17.0.4.1+1)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-17.0.4.1+1 (17.0.4.1+1, mixed mode, tiered, compressed oops, compressed class ptrs, parallel gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x386e96]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=ALL-SYSTEM --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:c:\Users\kvn\.vscode\extensions\redhat.java-1.12.0-win32-x64\lombok\lombok-1.18.24.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=c:\Users\kvn\AppData\Roaming\Code\User\workspaceStorage\8e36dc59759a024186eafdf7ade04046\redhat.java c:\Users\kvn\.vscode\extensions\redhat.java-1.12.0-win32-x64\server\plugins\org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration c:\Users\kvn\AppData\Roaming\Code\User\globalStorage\redhat.java\1.12.0\config_win -data c:\Users\kvn\AppData\Roaming\Code\User\workspaceStorage\8e36dc59759a024186eafdf7ade04046\redhat.java\jdt_ws
+
+Host: AMD A8-7650K Radeon R7, 10 Compute Cores 4C+6G , 4 cores, 6G,  Windows 11 , 64 bit Build 22621 (10.0.22621.457)
+Time: Tue Nov 29 21:27:47 2022 Hora estándar de Argentina elapsed time: 16496.792613 seconds (0d 4h 34m 56s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000263c312b350):  JavaThread "Framework stop - Equinox Container: 4f00d06b-42f4-4a4a-abd7-636650a937cc" [_thread_in_vm, id=5896, stack(0x000000bc48100000,0x000000bc48200000)]
+
+Stack: [0x000000bc48100000,0x000000bc48200000],  sp=0x000000bc481fcce0,  free space=1011k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x386e96]
+V  [jvm.dll+0x677242]
+V  [jvm.dll+0x386b3e]
+V  [jvm.dll+0x3ed454]
