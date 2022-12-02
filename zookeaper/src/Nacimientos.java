@@ -1,4 +1,4 @@
-public class Decesos {
+public class Nacimientos {
     //Atributos de la clase (Caracteristicas)
     public String especie;
     public int cantidad;
@@ -6,7 +6,7 @@ public class Decesos {
    * @param ali
    * @param can
    */
-  public Decesos(String esp, int can)
+  public Nacimientos(String esp, int can)
     {
         especie=esp;
         cantidad=can;

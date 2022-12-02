@@ -1,4 +1,4 @@
-public class Decesos {
+public class Anim {
     //Atributos de la clase (Caracteristicas)
     public String especie;
     public int cantidad;
@@ -6,13 +6,15 @@ public class Decesos {
    * @param ali
    * @param can
    */
-  public Decesos(String esp, int can)
+  public Anim(String esp, int can)
     {
         especie=esp;
         cantidad=can;
     }
     @Override
     public String toString() {
-        return "La cantidad de " + especie + " es de " + cantidad;
+        return "Especie : " + especie + " Cantidad : " + cantidad;
+    }
+    public void set(int i, int j) {
     }
 }
